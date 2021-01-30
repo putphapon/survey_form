@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light bg-gradient p-4">
+        <div class="container-fluid">
+            <!-- logo -->
+            <div>
+                <!-- <img src="" alt="logo" width="30" height="24" class="d-inline-block align-center"> -->
+                <i class="bi-house-door-fill"></i>
+                <a class="navbar-brand align-middle h1" href="index.html">Logo</a>
+            </div>
+            
+            <!-- user -->
+            <div>
+                <a class="navbar-brand align-middle h1" href="user.html">User</a>
+                <i class="bi-person-circle"></i>
+                <!-- <img src="" alt="user" width="30" height="24" class="d-inline-block align-center"> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- body-->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- desk -->
+            <div class="col p-1">
+    
+                <!-- control -->
+                <div class="d-flex m-1 p-2 bg-light bg-gradient">
+                    <!-- title -->
+                    <div class="flex-shrink-1 border-4 p-2 border-start">
+                        <span class="align-middle h4">status</span>
+                    </div>
+
+                    <!-- status -->
+                    <div class="flex-grow-1 ps-4 pe-4 border-4 border-start">
+                        <div class="position-relative m-4">
+                            <div class="progress" style="height: 1px;">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary bg-gradient rounded-pill" style="width: 5rem; height:2rem;">Setting</button>
+                            <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary bg-gradient rounded-pill" style="width: 5rem; height:2rem;">Share</button>
+                            <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary bg-gradient rounded-pill" style="width: 5rem; height:2rem;">Analytics</button>
+                          </div>
+                    </div>
+
+                    <!-- next -->
+                    <div class="flex-shrink-1 p-2 border-4 border-start">
+                        <!-- left -->
+                        <a href="#" role="button" class="btn btn-outline-dark bg-gradient align-middle rounded invisible">
+                            <span class="bi bi-chevron-left text-dark"></span>
+                        </a>
+                        <!-- right -->
+                        <a href="page-share.html" role="button" class="btn btn-outline-dark bg-gradient align-middle rounded">
+                            <span class="bi bi-chevron-right text-dark"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- content-->
+                <div class="row p-2">
+                    <div class="col-3">
+                        <!-- field-home -->
+                        <h6 class="bg-light bg-gradient rounded-pill p-2"><i class="bi bi-input-cursor p-3"></i>Field</h6>
+                        <p><em class="text-danger">* field All</em></p>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Short Answer</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Long Answer</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Name</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Address</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Phone</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Email</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Radio</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Checkbox</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Matrix</button>
+                                <button class="btn btn-primary" type="button"><i class="bi bi-telephone text-start"></i> Date/Time</button>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- field-Name -->
+                        <h6 class="bg-light bg-gradient rounded-pill p-2"><i class="bi bi-input-cursor p-3"></i>Field<i class="bi bi-arrow-right pe-1 ps-1"></i><span class="badge bg-secondary">Name</span></h6>
+                        <p><em class="text-danger">* field [Name]</em></p>
+
+                        <form>
+                            <!-- label -->
+                            <div class="m-2 p-2 bg-light">
+                                <legend>Label</legend>
+                                <!-- name -->
+                                <label for="name-title" class="form-label">Title</label>
+                                <input type="text" class="form-control" placeholder="name">
+                                <!-- subtitle -->
+                                <label for="name-title" class="form-label">Subtitle</label>
+                                <input type="text" class="form-control" placeholder="subtitle">
+                                <!-- tooltip -->
+                                <label for="name-title" class="form-label">Tooltip</label>
+                                <input type="text" class="form-control" placeholder="tooltip">
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="m-2 p-2 bg-light">
+                                <legend>Input</legend>
+                                <!-- first last -->
+                                <div class="form-check form-switch">
+                                    <label class="form-check-label"><em>Required</em> | <strong>Firstname Lastname</strong></label>
+                                    <input class="form-check-input" type="checkbox" >
+                                </div>
+                            </div>
+
+                            <!-- optional -->
+                            <div class="m-2 p-2 bg-light">
+                                <legend>Optional</legend>
+                                
+                                <!-- Middle -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <label class="form-check-label"><strong>Middle</strong></label>
+                                    <!-- required -->
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" >
+                                        <label class="form-check-label"><em>Required</em></label>
+                                    </div>
+                                </div>
+
+                                <!-- Prefix -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <label class="form-check-label"><strong>Prefix</strong></label>
+                                    <!-- required -->
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" >
+                                        <label class="form-check-label"><em>Required</em></label>
+                                    </div>
+                                </div>
+
+                                <!-- Suffix -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <label class="form-check-label"><strong>Suffix</strong></label>
+                                    <!-- required -->
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" >
+                                        <label class="form-check-label"><em>Required</em></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                    <!-- build -->
+                    <div class="col border-start border-3">
+                        <h6 class="bg-light bg-gradient rounded-pill p-2"><i class="bi bi-sliders p-3"></i>Build</h6>
+                        <div class="overflow-scroll">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et velit dolorum minima laboriosam eos aperiam consequuntur minus fugiat fugit architecto odio, distinctio, vitae, ipsam natus delectus non eligendi corrupti voluptates.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- review -->
+                    <div class="col border-start border-3">
+                        <h6 class="bg-light bg-gradient rounded-pill p-2"><i class="bi bi-eyeglasses p-3"></i>Review</h6>
+                        <div class="overflow-scroll">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et velit dolorum minima laboriosam eos aperiam consequuntur minus fugiat fugit architecto odio, distinctio, vitae, ipsam natus delectus non eligendi corrupti voluptates.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+   
+    <footer class="bg-light bg-gradient" style="height: 100px;">
+        <div class="d-flex justify-content-start align-items-center">
+            <h6 class="p-5">footer</h6>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
