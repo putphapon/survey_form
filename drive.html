@@ -44,7 +44,7 @@
                 <div class="d-flex justify-content-end m-2">
                     <a href="" id="new-page" class="btn btn-lg  btn-outline-secondary text-body align-items-center rounded-pill h6" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-plus-circle"></i>  New</a>
                     <ul class="dropdown-menu" aria-labelledby="new-page">
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-folder me-2"></i> Folder</a></li>
+                        <!-- <li><a class="dropdown-item" href="#"><i class="bi bi-folder me-2"></i> Folder</a></li> -->
                         <li><a class="dropdown-item" href="page-setting.html"><i class="bi bi-file-earmark me-2"></i> Page</a></li>
                       </ul>
                 </div>
@@ -52,8 +52,8 @@
                 <!-- directory -->
                 <div class="list-group">
                     <!-- folder -->
-                    <a class="list-group-item btn-outline-primary d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#folder" aria-expanded="false"><i class="bi-folder"></i>folder<i class="bi-chevron-right"></i></a>
-                    <div class="collapse" id="folder">
+                    <a class="list-group-item btn-outline-primary d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#folder" aria-expanded="false">Form<i class="bi-chevron-right"></i></a>
+                    <!-- <div class="collapse" id="folder">
                         <a class="list-group-item btn-outline-primary d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#name_folder" aria-expanded="false"><i class="bi-folder"></i>name folder<i class="bi-chevron-right"></i></a>
                         <div class="collapse" id="name_folder">
                             <a class="list-group-item d-flex btn-outline-primary justify-content-end align-items-center" data-bs-toggle="collapse" href="#sub_folder_1"><i class="bi bi-file-earmark me-2"></i>sub folder 1</a>
@@ -63,13 +63,14 @@
                         <a class="list-group-item d-flex btn-outline-primary justify-content-end align-items-center" data-bs-toggle="collapse" href="#Name_form_2"><i class="bi bi-file-earmark me-2"></i>Name Form 2</a>
                         <a class="list-group-item d-flex btn-outline-primary justify-content-end align-items-center" data-bs-toggle="collapse" href="#Name_form_3"><i class="bi bi-file-earmark me-2"></i>Name Form 3</a>
                         <a class="list-group-item d-flex btn-outline-primary justify-content-end align-items-center" data-bs-toggle="collapse" href="#Name_form_4"><i class="bi bi-file-earmark me-2"></i>Name Form 4</a>
-                    </div>
+                    </div> -->
                     
                     <!-- Archive -->
-                    <a class="list-group-item btn-outline-warning d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#archive" aria-expanded="false"><i class="bi-archive"></i>archive<i class="bi-chevron-right"></i></a>
+                    <a class="list-group-item btn-outline-primary d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#archive" aria-expanded="false">Draft<i class="bi-chevron-right"></i></a>
                     
                     <!-- Trash -->
-                    <a class="list-group-item btn-outline-danger d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#trash" aria-expanded="false"><i class="bi-trash"></i>trash<i class="bi-chevron-right"></i></a>
+                    <a class="list-group-item btn-outline-primary d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#trash" aria-expanded="false">Active<i class="bi-chevron-right"></i></a>
+                    <a class="list-group-item btn-outline-primary d-flex justify-content-between align-items-center" role="button" data-bs-toggle="collapse" href="#trash" aria-expanded="false">Inctive<i class="bi-chevron-right"></i></a>
                 </div>
             </div>
 
@@ -80,27 +81,27 @@
                 <div class="d-flex m-1 p-2 bg-light bg-gradient">
                     <!-- title -->
                     <div class="flex-shrink-1 border-4 p-2 border-start">
-                        <span class="h4">folder</span>
+                        <span class="h4">form</span>
                     </div>
                     <!-- breadcrumb -->
-                    <div class="flex-grow-1 p-2 border-4 border-start">
+                    <!-- <div class="flex-grow-1 p-2 border-4 border-start">
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#" class="text-decoration-none">folder</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">name folder</li>
                             </ol>
                         </nav>
-                    </div>
+                    </div> -->
                     <!-- view -->
                     <div class="flex-shrink-1 p-2 border-4 border-start">
                         <!-- list -->
-                        <button type="button" class="btn btn-outline-light rounded-circle">
+                        <!-- <button type="button" class="btn btn-outline-light rounded-circle">
                             <span class="bi bi-view-list text-dark"></span>
-                        </button>
+                        </button> -->
                         <!-- grid -->
-                        <button type="button" class="btn btn-outline-light rounded-circle">
+                        <!-- <button type="button" class="btn btn-outline-light rounded-circle">
                             <span class="bi bi-grid-3x2 text-dark"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
@@ -113,48 +114,46 @@
                             <table class="table">
                                 <thead class="table-Light">
                                     <tr>
-                                        <th>#</th>
-                                        <th>Name</th>
-                                        <th>Type</th>
-                                        <th>Status</th>
+                                        <th>active</th>
+                                        <th>Nameform</th>
+                                        <th>Link</th>
+                                        <th>Analytis</th>
                                         <th>Last modify</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="text-dark">
-                                        <td><i class="bi-folder-fill"></td>
-                                        <td>Name folder</td>
-                                        <td>folder</td>
-                                        <td>-</td>
-                                        <td>1 minute</td>
-                                    </tr>
-                                    <tr class="text-secondary">
-                                        <td><i class="bi bi-file-earmark-fill"></i></td>
+                                        <td>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </td>
                                         <td>Name form 1</td>
-                                        <td>page</td>
-                                        <td><span class="badge bg-secondary">Draft</span></td>
-                                        <td>1 minute</td>
+                                        <td><i class="bi bi-link"></i></td>
+                                        <td><i class="bi bi-graph-up"></i></td>
+                                        <td>1 ชั่วโมง</td>
                                     </tr>
-                                    <tr class="text-success">
-                                        <td><i class="bi bi-file-earmark-fill"></i></td>
+                                    <tr class="text-dark">
+                                        <td>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </td>
                                         <td>Name form 2</td>
-                                        <td>page</td>
-                                        <td><span class="badge bg-success">Ready</span></td>
-                                        <td>1 minute</td>
+                                        <td><i class="bi bi-link"></i></td>
+                                        <td><i class="bi bi-graph-up"></i></td>
+                                        <td>1 เดือน</td>
                                     </tr>
-                                    <tr class="text-warning">
-                                        <td><i class="bi bi-file-earmark-fill"></i></td>
+                                    <tr class="text-dark">
+                                        <td>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" checked>
+                                            </div>
+                                        </td>
                                         <td>Name form 3</td>
-                                        <td>page</td>
-                                        <td><span class="badge bg-warning">Until</span></td>
-                                        <td>1 minute</td>
-                                    </tr>
-                                    <tr class="text-danger">
-                                        <td><i class="bi bi-file-earmark-fill"></i></td>
-                                        <td>Name form 4</td>
-                                        <td>page</td>
-                                        <td><span class="badge bg-danger">Close</span></td>
-                                        <td>1 minute</td>
+                                        <td><i class="bi bi-link"></i></td>
+                                        <td><i class="bi bi-graph-up"></i></td>
+                                        <td>3 เดือน</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -164,12 +163,13 @@
                 
                 <!-- VIEW GRID -->
                 <!-- content-->
-                <p><em class="text-danger">* view-grid</em></p>
+                <!-- <p><em class="text-danger">* view-grid</em></p> -->
                 <!-- <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-3 p-2" id="view-grid"> -->
-                <div class="d-flex flex-wrap justify-content-around m-1" id="view-grid">
+                <!---->
+                <!-- <div class="d-flex flex-wrap justify-content-around m-1" id="view-grid"> -->
                     
                     <!-- folder -->
-                    <div class="card mt-1">
+                    <!-- <div class="card mt-1">
                         <a href="" class="text-decoration-none text-body">
                             <div class="card-header bg-secondary bg-gradient">
                                 <i class="bi bi-folder-fill"></i> name folder
@@ -183,10 +183,10 @@
                                 </ul>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                     <!-- page -->
-                    <div class="card mt-1 bg-light bg-gradient">
+                    <!-- <div class="card mt-1 bg-light bg-gradient">
                         <a href="" class="text-decoration-none text-body">
                             <div class="card-body">
                                 <h6 class="card-title"><i class="bi bi-file-earmark-fill"></i>  Name form 1</h6>
@@ -194,10 +194,10 @@
                                 <div class="text-center align-middle"><i class="bi bi-pie-chart-fill h1"></i></div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                     <!-- page -->
-                    <div class="card mt-1 bg-success bg-gradient">
+                    <!-- <div class="card mt-1 bg-success bg-gradient">
                         <a href="" class="text-decoration-none text-body">
                             <div class="card-body">
                                 <h6 class="card-title"><i class="bi bi-file-earmark-fill"></i>  Name form 2</h6>
@@ -205,10 +205,10 @@
                                 <div class="text-center align-middle"><i class="bi bi-pie-chart-fill h1"></i></div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                     <!-- page -->
-                    <div class="card mt-1 bg-warning bg-gradient">
+                    <!-- <div class="card mt-1 bg-warning bg-gradient">
                         <a href="" class="text-decoration-none text-body">
                             <div class="card-body">
                                 <h6 class="card-title"><i class="bi bi-file-earmark-fill"></i>  Name form 3</h6>
@@ -217,10 +217,10 @@
                                 <p class="fw-light">31 Mar 2022 (600 days)</span></p>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                     <!-- page -->
-                    <div class="card mt-1 bg-danger bg-gradient">
+                    <!-- <div class="card mt-1 bg-danger bg-gradient">
                         <a href="" class="text-decoration-none text-body">
                             <div class="card-body">
                                 <h6 class="card-title"><i class="bi bi-file-earmark-fill"></i>  Name form 4</h6>
@@ -228,9 +228,9 @@
                                 <div class="text-center align-middle"><i class="bi bi-pie-chart-fill h1"></i></div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>
